@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUDY অ্যাপ</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- লগইন পেজ -->
+        <div class="login-page" id="loginPage">
+            <h1>STUDY অ্যাপ - লগইন</h1>
+            <input type="email" id="email" placeholder="ইমেইল" required>
+            <input type="password" id="password" placeholder="পাসওয়ার্ড" required>
+            <button onclick="login()">লগইন</button>
+            <p>একাউন্ট নেই? <a href="#" onclick="showSignup()">সাইন আপ করুন</a></p>
+        </div>
+
+        <!-- সাইন আপ পেজ -->
+        <div class="signup-page" id="signupPage" style="display:none;">
+            <h1>STUDY অ্যাপ - সাইন আপ</h1>
+            <input type="email" id="signupEmail" placeholder="ইমেইল" required>
+            <input type="password" id="signupPassword" placeholder="পাসওয়ার্ড" required>
+            <button onclick="signup()">সাইন আপ</button>
+            <p>ইAlready একাউন্ট আছে? <a href="#" onclick="showLogin()">লগইন করুন</a></p>
+        </div>
+
+        <!-- হোম পেজ -->
+        <div class="home-page" id="homePage" style="display:none;">
+            <h1>হোম পেজ</h1>
+            <div class="chat-section">
+                <h2>চ্যাট</h2>
+                <input type="email" id="recipientEmail" placeholder="প্রাপক ইমেইল" required>
+                <textarea id="message" placeholder="আপনার বার্তা লিখুন..."></textarea>
+                <button onclick="sendMessage()">বার্তা পাঠান</button>
+                <button onclick="shareFile()">ফাইল শেয়ার করুন</button>
+                <button onclick="startAudioCall()">অডিও কল শুরু করুন</button>
+                <button onclick="startVideoCall()">ভিডিও কল শুরু করুন</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
