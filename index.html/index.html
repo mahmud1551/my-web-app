@@ -3,44 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>STUDY অ্যাপ</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>প্রোডাক্ট সেল অ্যাপ</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <!-- লগইন পেজ -->
-        <div class="login-page" id="loginPage">
-            <h1>STUDY অ্যাপ - লগইন</h1>
-            <input type="email" id="email" placeholder="ইমেইল" required>
-            <input type="password" id="password" placeholder="পাসওয়ার্ড" required>
-            <button onclick="login()">লগইন</button>
-            <p>একাউন্ট নেই? <a href="#" onclick="showSignup()">সাইন আপ করুন</a></p>
+    <!-- হেডার -->
+    <header>
+        <h1>প্রোডাক্ট সেল অ্যাপ</h1>
+        <div class="search-bar">
+            <input type="text" placeholder="পণ্য খুঁজুন...">
+            <button>খোঁজ</button>
         </div>
+    </header>
 
-        <!-- সাইন আপ পেজ -->
-        <div class="signup-page" id="signupPage" style="display:none;">
-            <h1>STUDY অ্যাপ - সাইন আপ</h1>
-            <input type="email" id="signupEmail" placeholder="ইমেইল" required>
-            <input type="password" id="signupPassword" placeholder="পাসওয়ার্ড" required>
-            <button onclick="signup()">সাইন আপ</button>
-            <p>ইAlready একাউন্ট আছে? <a href="#" onclick="showLogin()">লগইন করুন</a></p>
+    <!-- ক্যাটাগরি সেকশন -->
+    <section class="categories">
+        <h2>ক্যাটাগরি</h2>
+        <ul>
+            <li><a href="#">ইলেকট্রনিক্স</a></li>
+            <li><a href="#">ফ্যাশন</a></li>
+            <li><a href="#">ফুড</a></li>
+            <li><a href="#">হোম অ্যাপ্লায়েন্স</a></li>
+        </ul>
+    </section>
+
+    <!-- প্রোডাক্ট লিস্ট -->
+    <section class="products">
+        <h2>প্রোডাক্ট</h2>
+        <div class="product">
+            <img src="product1.jpg" alt="প্রোডাক্ট ১">
+            <p>প্রোডাক্ট ১</p>
+            <p>মূল্য: ১০০০ টাকা</p>
+            <button>কার্টে যোগ করুন</button>
         </div>
+        <!-- আরো প্রোডাক্ট -->
+    </section>
 
-        <!-- হোম পেজ -->
-        <div class="home-page" id="homePage" style="display:none;">
-            <h1>হোম পেজ</h1>
-            <div class="chat-section">
-                <h2>চ্যাট</h2>
-                <input type="email" id="recipientEmail" placeholder="প্রাপক ইমেইল" required>
-                <textarea id="message" placeholder="আপনার বার্তা লিখুন..."></textarea>
-                <button onclick="sendMessage()">বার্তা পাঠান</button>
-                <button onclick="shareFile()">ফাইল শেয়ার করুন</button>
-                <button onclick="startAudioCall()">অডিও কল শুরু করুন</button>
-                <button onclick="startVideoCall()">ভিডিও কল শুরু করুন</button>
-            </div>
-        </div>
-    </div>
+    <!-- অ্যাড মানি এবং মোবাইল ব্যাংক -->
+    <section class="add-money">
+        <h2>অ্যাড মানি</h2>
+        <button>bKash</button>
+        <button>Nagad</button>
+        <button>Rocket</button>
+    </section>
 
-    <script src="app.js"></script>
+    <!-- ফুটার -->
+    <footer>
+        <p>&copy; Mahmud Developer</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
