@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mahmud Matching Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Welcome Screen -->
+  <div id="welcome-screen" class="welcome-screen">
+    <h1>Welcome</h1>
+    <h2>Mahmud Matching Game</h2>
+    <button id="start-button">Start Game</button>
+  </div>
+
+  <!-- Game Area (Initially hidden) -->
+  <div id="game-area" class="hidden">
+    <h1>Mahmud Matching Game</h1>
+    <div id="level-status"></div>
+    <div id="game-status"></div>
+    <div id="timer">Time: 40s</div>
+    <div class="game-container">
+      <!-- Cards will be dynamically added here -->
+    </div>
+
+    <!-- Hidden Buttons (Initially hidden) -->
+    <div class="button-container hidden-buttons">
+      <button id="try-again" class="hidden">Try Again</button>
+      <button id="next-level" class="hidden">Next Level</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
